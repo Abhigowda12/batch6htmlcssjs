@@ -1,0 +1,139 @@
+<html>
+<root element of an HTML page >
+
+<head>
+    <meta charset="utf-8">
+    <meta information about the HTML page >
+    <title>Page Title></title>
+    <style>
+        #Abhi {
+            background-color: orange;
+            color: black;
+            padding: 50px;
+            text-align: center;
+            border-bottom: 6px solid grey;
+            margin-bottom: 50px;
+
+        }
+
+        .inputtextbox{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border-bottom: 1px solid greenyellow;
+        }
+        
+
+        .test {
+            background-color: red;
+        }
+
+        div {
+            color: blue;
+            font-size: 15px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+      <link rel="stylesheet" href="abhi.css">
+</head>
+
+<body>
+
+    <h1 id="Abhi" style="font-size: 50px;">Login page</h1>
+    <div style="padding:40px">
+        <input type="text" id="FirstName" name="FirstName" placeholder="First Name" /> <input type="text" id="lastName"
+            name="lastName" placeholder="LastName" />
+        <br />
+        <br />
+        <input type="number" id="MobileNumber" name="MobileNumber" placeholder="MobileNumber" /> <br />or <br />
+        <input type="text" id="Email" name="Email" placeholder="email address" />
+        <br />
+        <br />
+        <input type="password" id="password" name="password" placeholder="New password" />
+        <br />
+        <br />
+       <label> Date of birth<br>
+
+                <input type="date" id="DateofBirth" /><br />
+                <br />
+                <br />
+                <button type="button" onclick="Login()">Login</button>
+       </label>
+        <script type="text/javascript">
+
+            function Login() {
+
+                var FirstName = document.getElementById("FirstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var MobileNumber = document.getElementById("MobileNumber").value;
+                var Email = document.getElementById("Email").value;
+                var password = document.getElementById("password").value;
+                var DateofBirth = document.getElementById("DateofBirth").value;
+
+                if (FirstName === "") {
+                    console.log("please Entere ur FirstName")
+
+                } else
+                 if (FirstName == "Abhi") {
+                    console.log("Entered firstName is correct");
+                    console.log("FirstName: " + FirstName);
+
+
+
+                } else {
+                    console.log("Entered wrong FirstName")
+                }
+                if (lastName == "Gowda") {
+                    console.log("Entered lastName is correct");
+                    console.log("lastName: " + lastName);
+
+
+                } else {
+                    console.log("Entered wrong lastName")
+                }
+                if (Email == "abhi@gmail.com") {
+                    console.log("Entered Email is correct")
+                    console.log("Email: " + Email);
+
+
+                } else {
+                    console.log("please enter correct Email id")
+                }
+                if (MobileNumber == 1234567890) {
+                    console.log("Entered MobileNumber is correct");
+                    console.log("MobileNumber: " + MobileNumber);
+
+
+                } else {
+                    console.log("please enter correct  MobileNumber ")
+                }
+                if (password == "abhigowda") {
+                    console.log("Entered password is correct")
+                    console.log("password: " + password);
+
+                } else {
+                    console.log("Entered wrong password")
+
+
+                }
+
+                if (FirstName == "Abhi" && lastName == "Gowda" && MobileNumber == "1234567890" && Email == "abhi@gmail.com" && password == "abhigowda") {
+                    console.log("Created successfully");
+
+
+                } else {
+                    console.log("entered credential is wrong")
+                }
+
+
+            }
+        </script>
+</body>
+
+</html>
