@@ -43,15 +43,17 @@
 <script type="text/javascript">
     var text = "";
     var i = 20;
+    var count=0;
     while (i < 70) {
         if (i % 2 === 0) {
-            if (i !== 28) {
+             count++;
             text += "<br>the number is " + i;
             console.log(text);
-            }
+           
         }
         i++;
 
     }
-    document.getElementById("demo").innerHTML = text;
+    console.log(count);
+    document.getElementById("demo").innerHTML = text +"<br>totalcount " +count; 
 </script>

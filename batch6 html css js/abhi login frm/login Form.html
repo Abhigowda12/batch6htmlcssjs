@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="login Form.css">
+
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <input type="text" placeholder="Username" name="" id="Username" value="">
+        </div>
+
+        <div class="textbox">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" name="" id="Password" value="">
+        </div>
+
+        <button class="button" type="button" name="" onclick=" Signin()">Signin</button>
+
+    </div>
+    <script type="text/javascript">
+        debugger;
+
+        function Signin() {
+
+            var Username = document.getElementById("Username").value;
+            var Password = document.getElementById("Password").value;
+
+            if (Username === "") {
+                alert("please Entere ur Username")
+                console.log("please Entere ur Username")
+
+            } else if (Username == "Abhi") {
+                    console.log("Entered Username is correct");
+                    console.log("Username: " + Username);
+
+                } else {
+                    console.log("Entered wrong Username")
+
+
+                }
+
+            if (Password === "") {
+                alert("please Entere ur Password")
+                console.log("please Entere ur Password")
+            } else
+                if (Password == "abhigowda") {
+                    console.log("Entered Password is correct")
+                    console.log("Password: " + Password);
+
+                } else {
+                    console.log("Entered wrong Password")
+
+
+                }
+            if (Username == "Abhi" && password == "abhigowda") {
+                console.log("Created successfully");
+
+
+            } else {
+                console.log("entered credential is wrong")
+            }
+
+        }
+
+
+
+    </script>
+</body>
+</head>
+
+</html>

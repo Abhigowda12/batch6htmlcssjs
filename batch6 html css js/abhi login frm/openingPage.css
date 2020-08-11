@@ -7,6 +7,7 @@
 }
 body{
     font-family: montserrat;
+    
 
 }
 nav{
@@ -103,15 +104,16 @@ a.active,a:hover{
 .background-image{
 
 
-    background: url("images\ \(20\).jpg");
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* height: calc(100vh -80px);  */ 
-    background-repeat: no-repeat, repeat;
-    background-color: #cccccc;
+    background: url("images\ \(12\).jpg");
+    /* background-repeat: no-repeat;
     background-size: cover;
+    height: calc(100vh -80px);   */
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: 100% 900px;
     background-attachment: fixed;
     height:200px;width:1200px;
     
+     /* background-size: 100% 900px; */
 }
 

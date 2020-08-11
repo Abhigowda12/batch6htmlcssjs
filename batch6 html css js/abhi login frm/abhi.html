@@ -77,6 +77,7 @@
                 var DateofBirth = document.getElementById("DateofBirth").value;
 
                 if (FirstName === "") {
+                    alert("please Entere ur FirstName")
                     console.log("please Entere ur FirstName")
 
                 } else
@@ -94,10 +95,14 @@
                     console.log("lastName: " + lastName);
 
 
-                } else {
+                }else {
                     console.log("Entered wrong lastName")
                 }
-                if (Email == "abhi@gmail.com") {
+                if (Email ===""){
+                    alert("please Entere ur Email id")
+                    console.log("please Entere ur Email")
+                }
+                else if (Email == "abhi@gmail.com") {
                     console.log("Entered Email is correct")
                     console.log("Email: " + Email);
 
@@ -105,7 +110,11 @@
                 } else {
                     console.log("please enter correct Email id")
                 }
-                if (MobileNumber == 1234567890) {
+                if (MobileNumber ===""){
+                    alert("please Entere ur MobileNumber")
+                    console.log("please Entere ur MobileNumber")
+                }
+               else if (MobileNumber == 1234567890) {
                     console.log("Entered MobileNumber is correct");
                     console.log("MobileNumber: " + MobileNumber);
 
@@ -113,7 +122,11 @@
                 } else {
                     console.log("please enter correct  MobileNumber ")
                 }
-                if (password == "abhigowda") {
+                if (password ===""){
+                    alert("please Entere ur password")
+                    console.log("please Entere ur passwordfff")
+                }
+               else if (password == "abhigowda") {
                     console.log("Entered password is correct")
                     console.log("password: " + password);
 

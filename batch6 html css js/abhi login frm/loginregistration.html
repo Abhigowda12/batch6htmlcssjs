@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="loginregistration.css">
+</head>
+    <body>
+         <div class="reg">
+             <h2>Register Here</h2>
+             <label>First Name</label><br>
+             <input type="text" name="name"
+             placeholder="First Name" id="FirstName">
+             <br><br>
+             <label>Last Name</label><br>
+             <input type="text" name="name"
+             placeholder="last Name" id="lastName">
+             <br><br>
+             <label>Email</label><br>
+             <input type="email" name="email"
+             placeholder="Enter u r mail id" id="Email">
+             <br><br>
+             <label>Password</label><br>
+             <input type="password" name="pass"
+             placeholder="Enter u r password" id="password">
+             <br><br>
+             <label>Re-Enter Password</label><br>
+             <input type="password" name="pass"
+             placeholder="Re-Enter u r password" id="confirmpassword">
+             <br><br>
+             <label>Mobile Number </label><br>
+             <input type="number" name="num"
+             placeholder="Enter u r Mobile Number" id="MobileNumber">
+             <br><br>
+             <label>Age</label><br>
+             <input type="number"  id="Age" value="">
+             <br><br>
+             <label>Gender</label><br>
+             <input type="radio" id="ma"  name="gender"><span id="ma"> Male</span> 
+               <input type="radio" id="ma1" name="gender"> <span id="ma">FeMale</span>
+               <input type="radio" id="ma2"  name="gender"> <span id="ma"> others</span>
+              <br><br>
+
+              <input type="checkbox" id="ch"><span id="ch">  I Agree all the terms & conditions.</span><br><br>
+              <button class="submit" onclick="submit()"> Create account</button> 
+         </div>
+         <script type="text/javascript">
+
+            function submit() {
+debugger;
+                var FirstName = document.getElementById("FirstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var MobileNumber = document.getElementById("MobileNumber").value;
+                var Email = document.getElementById("Email").value;
+                var password = document.getElementById("password").value;
+                var confirmpassword = document.getElementById("confirmpassword").value;
+                var Age = document.getElementById("Age").value;
+                var Gender = document.getElementById("ma").value;
+
+                if (FirstName == "") {
+                    alert("please Entere ur FirstName")
+                    console.log("please Entere ur FirstName")
+                }
+
+                    if (Email == "") {
+                    alert("please Entere ur Email id")
+                    console.log("please Entere ur Email id")
+                    }
+
+                    if (password == "") {
+                    alert("please Entere ur password")
+                    console.log("please Entere ur password")
+                    }
+
+                    if (password == confirmpassword) {
+                    alert("password matched")
+                    console.log("password matched")
+                    }
+                    else {
+                        alert("please enter same password")
+                    }
+                    if(Age < 18) {
+                        alert("your Younger")
+                        console.log("Younger");
+                    }
+                    if(Age > 18 && Age < 50) {
+                       console.log("Mediator");
+                    }
+                    if(Age > 50) {
+                        console.log("Elder");
+                    }
+                    if(FirstName == "Abhi" && Email == "abhi@gmail.com" && password == "abhigowda" && confirmpassword == "abhigowda"){
+                        console.log("FirstName :" + FirstName);
+                        console.log("lastName :" + lastName);
+                        console.log("Email :" + Email);
+                        console.log("password :" + passworde);
+                        console.log("confirmpassword :" + confirmpassword);
+                        console.log("Abhi account created successfully")
+                       alert("Abhi account created successfully")
+                    }
+                    else{
+                        console.log("wrong credential entered")
+                        alert("wrong credential entered")
+                    }
+
+            }
+        </script>
+                    
+    </body>
+
+</html>
